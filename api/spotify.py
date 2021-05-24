@@ -12,9 +12,9 @@ load_dotenv(find_dotenv())
 # Spotify scopes:
 #   user-read-currently-playing
 #   user-read-recently-played
-SPOTIFY_CLIENT_ID = "74fd9c00c5ea47b58a9f999b3f5cab04"
-SPOTIFY_SECRET_ID = "022f757132a9477caa0154fe849bfc4b"
-SPOTIFY_REFRESH_TOKEN = "AQBZYDQbTBEq49RnxL-CqGyueZyp7rMZR_AcZnfwXu016lVTsKIX4mDbdQNmS8MSNt7iChmaEdBxTBGRan4Kz5Qs05Ge6ZOvAzDT1kF9skrr_Az1H2qe1hGM6hUjOKiN60w"
+SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+SPOTIFY_SECRET_ID = os.getenv("SPOTIFY_SECRET_ID")
+SPOTIFY_REFRESH_TOKEN = os.getenv("SPOTIFY_REFRESH_TOKEN")
 
 REFRESH_TOKEN_URL = "https://accounts.spotify.com/api/token"
 NOW_PLAYING_URL = "https://api.spotify.com/v1/me/player/currently-playing"
